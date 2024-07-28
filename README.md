@@ -22,9 +22,8 @@ Este proyecto tiene como objetivo desarrollar una API robusta y segura para la c
 
 ## Tecnologías Utilizadas
 
-- **Backend:** Node.js con Nuxt.js
+- **Backend:** Spring Boot
 - **Base de Datos:** PostgreSQL
-- **Autenticación y Autorización:** JWT (JSON Web Tokens)
 - **Documentación:** Swagger
 
 ## Uso de la API
