@@ -195,7 +195,7 @@ Tareas que se han completado. Estas incluyen:
 ## Tecnologías Utilizadas
 
 - **Backend:** Spring Boot
-- **Base de Datos:** PostgreSQL
+- **Base de Datos:** MySQL
 - **Documentación:** Swagger
 
 ## Uso de la API
