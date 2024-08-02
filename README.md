@@ -21,6 +21,36 @@ Este proyecto tiene como objetivo desarrollar una API robusta y segura para la c
 - **Registro de Transacciones:** Facilita el registro de transacciones bancarias, asegurando la integridad y precisión de los datos.
 - **Gestión de Cuentas:** Ofrece herramientas para la gestión eficiente de cuentas bancarias, incluyendo la creación, actualización y eliminación de cuentas.
 
+# Módulos y Sprints
+
+### Módulo de Autenticación y Autorización
+
+Responsable de centralizar la lógica para manejar el acceso no autorizado en todas las APIs.
+
+### Módulo de Gestión de Tarjetas de Crédito
+
+- **Sprint 1:** Implementar la funcionalidad para obtener todas las tarjetas de crédito registradas en el sistema.
+- **Sprint 2:** Desarrollar la funcionalidad para consultar los detalles de una tarjeta de crédito específica por su ID.
+- **Sprint 3:** Implementar la funcionalidad para obtener todas las tarjetas de crédito asociadas a un cliente específico.
+- **Sprint 4:** Desarrollar la funcionalidad para crear nuevas tarjetas de crédito.
+
+### Módulo de Operaciones de Tarjetas de Crédito
+
+- **Sprint 5:** Implementar la funcionalidad para realizar pagos de deudas de tarjetas de crédito.
+- **Sprint 6:** Desarrollar la funcionalidad para cargar montos a tarjetas de crédito.
+- **Sprint 7:** Implementar la funcionalidad para consultar el monto disponible en una tarjeta de crédito.
+
+### Módulo de Gestión de Créditos
+
+- **Sprint 8:** Desarrollar la funcionalidad para obtener todos los créditos registrados en el sistema.
+- **Sprint 9:** Implementar la funcionalidad para consultar los detalles de un crédito específico por su ID.
+- **Sprint 10:** Desarrollar la funcionalidad para obtener todos los créditos asociados a un cliente específico.
+- **Sprint 11:** Implementar la funcionalidad para crear nuevos créditos.
+
+### Módulo de Operaciones de Crédito
+
+- **Sprint 12:** Desarrollar la funcionalidad para realizar pagos de deudas de créditos.
+
 # Seguimiento a Cambios: GitHub Issues
 
 ### Backlog
