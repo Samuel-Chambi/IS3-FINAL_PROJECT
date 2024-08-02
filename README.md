@@ -29,20 +29,20 @@ Este proyecto tiene como objetivo desarrollar una API robusta y segura para la c
 
 ## Principios SOLID
 
-- **Principio de responsabilidad única**
+- **Principio de responsabilidad única:**
   Las clases implementadas solo realizan un tipo de tarea. Como ejemplo tenemos a las clases [factory](./bank_api/credit-microservice/src/main/java/com/microservice/credit/factory/). Ejemplo: La clase *SignatoryFactory* se encarga únicamente de crear instancias *Signatory*.
 
   ![alt text](assets/solid/signatory_factory.png)
 
 
-- **Principio de abierto/cerrado**
+- **Principio de abierto/cerrado:**
   Este principio fue aplicado principalmente en los controladores. Por ejemplo, los métodos de la clase *BankAccountLogController* no deberían ser modificados, pero es posible que se agreguen algunos métodos en el futuro.
 
   ![alt text](assets/solid/abierto_cerrado.png)
 
 
 <!-- - **Principio de sustitución de Liskov** -->
-- **Principio de segregación de la interfaz**
+- **Principio de segregación de la interfaz:**
   Todas las clases que heredan de *JpaRepository*, utilizan sus funciones en algún momento. Ejemplo (clase *BankAccountLogRepository*), los métodos de *JpaRepository* se utilizan desde otras clases, como *BankAccountLogService*:
 
   ![alt text](assets/solid/jpa_extends.png)
@@ -53,24 +53,24 @@ Este proyecto tiene como objetivo desarrollar una API robusta y segura para la c
 
 ## Domain-Driven Design
 
-- **Entidades y objetos de valor**
+- **Entidades y objetos de valor:**
   Las entidades principales se encuentran en el microservicio *credit*. Además, cada entidad tiene un ID y algunos objetos de valor (número de tarjeta, ID del cliente, etc):
 
   ![alt text](assets/ddd/entidades.png)
   ![alt text](assets/ddd/creditcard.png)
 
-- **Agregados**
+- **Agregados:**
   La clase *BankAccount* contiene listas (sets) de titulares (holders) y signatarios.
 
   ![alt text](assets/ddd/bank_account_agregados.png)
 
-- **Fábricas y módulos**
+- **Fábricas y módulos:**
   Los objetos fábrica se encargan únicamente de la creación de instancias de algún módulo o agregado.
 
   ![alt text](assets/ddd/factories.png)
   ![alt text](assets/ddd/holder_factory.png)
 
-- **Repositorios y servicios**
+- **Repositorios y servicios:**
   Se implementaron múltiples capas que funcionan como repositorios y servicios (una capa por cada microservicio). Ejemplo (microservicio *bank-accounts*):
 
   ![alt text](assets/ddd/bank_accounts_repositorios.png)
@@ -80,12 +80,18 @@ Este proyecto tiene como objetivo desarrollar una API robusta y segura para la c
 
 El proyecto siguió una arquitectura basada en microservicios. A continuación se describe la estructura de los microservicios implementados. 
 - bank-accounts-microservice
+
+
   ![alt text](assets/microservicios/bank-account-microservice.drawio.png)}
 
 - client-microservice
+
+
   ![alt text](assets/microservicios/client.drawio.png)
 
 - credit-microservice
+
+
   ![alt text](assets/microservicios/credit.drawio.png)
 
   Adicionalmente se utilizaron los microservicios *gateway* y *Eureka*. *Gateway* funciona como un punto de comunicación entre el cliente y los microservicios. *Eureka* facilita la comunicación entre los microservicios registrados. 
