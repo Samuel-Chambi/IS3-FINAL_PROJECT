@@ -31,17 +31,22 @@ Este proyecto tiene como objetivo desarrollar una API robusta y segura para la c
 
 - **Principio de responsabilidad única**
 Las clases implementadas solo realizan un tipo de tarea. Como ejemplo tenemos a las clases [factory](./bank_api/credit-microservice/src/main/java/com/microservice/credit/factory/). Ejemplo: 
+
 ![alt text](assets/solid/signatory_factory.png)
+
 La clase *SignatoryFactory* se encarga únicamente de crear instancias *Signatory*. 
 
 - **Principio de abierto/cerrado**
 Este principio fue aplicado principalmente en los controladores. 
+
 ![alt text](assets/solid/abierto_cerrado.png)
+
 Por ejemplo, los métodos de la clase *BankAccountLogController* no deberían ser modificados, pero es posible que se agreguen algunos métodos en el futuro.   
 <!-- - **Principio de sustitución de Liskov** -->
 - **Principio de segregación de la interfaz**
 Todas las clases que heredan de *JpaRepository*, utilizan sus funciones en algún momento. Ejemplo (clase *BankAccountLogRepository*):      
 ![alt text](assets/solid/jpa_extends.png)
+
 Los métodos de *JpaRepository* se utilizan desde otras clases, por ejemplo *BankAccountLogService*:
 ![alt text](assets/solid/bankaccount_service.png)
 
@@ -52,13 +57,16 @@ Los métodos de *JpaRepository* se utilizan desde otras clases, por ejemplo *Ban
 
 - **Entidades y objetos de valor** 
 Las entidades principales se encuentran en el microservicio *credit*. 
+
 ![alt text](assets/ddd/entidades.png)
 
 Cada entidad tiene un ID y algunos objetos de valor (número de tarjeta, ID del cliente, etc):
+
 ![alt text](assets/ddd/creditcard.png)
 
 - **Agregados**
 La clase *BankAccount* contiene listas (sets) de titulares (holders) y signatarios. 
+
 ![alt text](assets/ddd/bank_account_agregados.png)
 
 - **Fábricas y módulos** 
