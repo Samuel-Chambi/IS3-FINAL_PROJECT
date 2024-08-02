@@ -68,6 +68,8 @@ Este proyecto tiene como objetivo desarrollar una API robusta y segura para la c
   Los objetos fábrica se encargan únicamente de la creación de instancias de algún módulo o agregado.
 
   ![alt text](assets/ddd/factories.png)
+
+  
   ![alt text](assets/ddd/holder_factory.png)
 
 - **Repositorios y servicios:**
