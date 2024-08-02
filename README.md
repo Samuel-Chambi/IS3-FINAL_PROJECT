@@ -57,6 +57,8 @@ Este proyecto tiene como objetivo desarrollar una API robusta y segura para la c
   Las entidades principales se encuentran en el microservicio *credit*. Además, cada entidad tiene un ID y algunos objetos de valor (número de tarjeta, ID del cliente, etc):
 
   ![alt text](assets/ddd/entidades.png)
+
+
   ![alt text](assets/ddd/creditcard.png)
 
 - **Agregados:**
