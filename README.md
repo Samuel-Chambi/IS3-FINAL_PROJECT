@@ -53,12 +53,14 @@ Los métodos de *JpaRepository* se utilizan desde otras clases, por ejemplo *Ban
 - **Entidades y objetos de valor** 
 Las entidades principales se encuentran en el microservicio *credit*. 
 ![alt text](assets/ddd/entidades.png)
+
 Cada entidad tiene un ID y algunos objetos de valor (número de tarjeta, ID del cliente, etc):
 ![alt text](assets/ddd/creditcard.png)
 
 - **Agregados**
 La clase *BankAccount* contiene listas (sets) de titulares (holders) y signatarios. 
 ![alt text](assets/ddd/bank_account_agregados.png)
+
 - **Fábricas y módulos** 
 Los objetos fábrica se encargan únicamente de la creación de instancias de algún módulo o agregado. 
 ![alt text](assets/ddd/factories.png)
@@ -72,11 +74,14 @@ Se implementaron múltiples capas que funcionan como repositorios y servicios (u
 ## Patrones de arquitectura
 El proyecto siguió una arquitectura basada en microservicios. A continuación se describe la estructura de los microservicios implementados. 
 - bank-accounts-microservice
-![alt text](assets/microservicios/bank-account-microservice.drawio.png)
+![alt text](assets/microservicios/bank-account-microservice.drawio.png)}
+
 - client-microservice
 ![alt text](assets/microservicios/client.drawio.png)
+
 - credit-microservice
 ![alt text](assets/microservicios/credit.drawio.png)
+
 Adicionalmente se utilizaron los microservicios *gateway* y *Eureka*. *Gateway* funciona como un punto de comunicación entre el cliente y los microservicios. *Eureka* facilita la comunicación entre los microservicios registrados. 
 
 ## Pruebas de API 
