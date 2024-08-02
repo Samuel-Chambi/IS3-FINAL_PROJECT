@@ -23,7 +23,7 @@ class ClientServiceClientTest {
         MockitoAnnotations.openMocks(this);
     }
 
-    private final String CLIENT_SERVICE_URL = "http://localhost:8095/clients";
+    private final String CLIENT_SERVICE_URL = "http://localhost:8091/api/clients";
 
     @Test
     void getClientTypeById_success() {

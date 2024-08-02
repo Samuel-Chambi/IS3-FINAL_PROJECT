@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/credit_service_db
     username: root
-    password:
+    password: root123
   jpa:
     hibernate:
       ddl-auto: none

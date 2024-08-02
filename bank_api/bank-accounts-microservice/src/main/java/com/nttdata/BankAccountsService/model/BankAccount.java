@@ -1,5 +1,5 @@
 package com.nttdata.BankAccountsService.model;
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.sql.Timestamp;
 
 import lombok.Data;

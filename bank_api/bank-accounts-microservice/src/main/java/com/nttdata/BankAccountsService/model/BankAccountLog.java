@@ -3,7 +3,7 @@ package com.nttdata.BankAccountsService.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.sql.Timestamp;
 @Data
 @Entity

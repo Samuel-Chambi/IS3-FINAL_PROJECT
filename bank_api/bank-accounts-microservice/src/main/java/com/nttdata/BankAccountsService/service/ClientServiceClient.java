@@ -14,7 +14,7 @@ public class ClientServiceClient {
     private static final String CLIENT_SERVICE_URL = "http://localhost:8091/api/clients";
 
     /**
-     * Returns the response from the customer microservice API to find the type of a customer by its ID.
+     * Returns the response from the customer microservice API to find the type of customer by its ID.
      * @param client_id ClientID
      * @return A string representing the type of client or an error message specifying what happened.
      */
